@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Website Directory</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Website Directory</h1>
+      <form id="websiteForm">
+        <input type="hidden" id="websiteId" />
+        <input type="text" id="title" placeholder="Website Title" required />
+        <input type="url" id="url" placeholder="Website URL" required />
+        <button type="submit">Add Website</button>
+        <button type="button" id="cancelEdit" style="display: none">
+          Cancel Edit
+        </button>
+      </form>
+      <input type="text" id="search" placeholder="Search websites..." />
+      <table>
+        <thead>
+          <tr>
+            <th>Title</th>
+            <th>URL</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody id="websiteList"></tbody>
+      </table>
+      <div id="pagination"></div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
